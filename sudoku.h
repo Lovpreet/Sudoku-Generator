@@ -16,24 +16,7 @@ class sudoku
         int comp[9][9];
         int data[9][9];
         int arr[9][9];
-
-        int checkans()
-        {
-            int i,j;
-            for(i=0;i<9;i++)
-            {
-
-                for(j=0;j<9;j++)
-                {
-                    if(comp[i][j]!=data[i][j])
-                    {
-                        return 1;
-                    }
-                }
-
-            }
-            return 0;
-        }
+	
         void getdata()
         {
             for(int i=0;i<9;i++)
@@ -220,9 +203,9 @@ bool sudoku :: sudogen()
 		{
 			data[i][j] = num;
 			if (sudogen())
-            {
+               		{
 				return true;
-            }
+        	        }
 			data[i][j] = UNASSIGNED;
 		}
 	}
