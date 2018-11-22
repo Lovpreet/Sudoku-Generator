@@ -13,7 +13,7 @@ int cnt=0;
 class sudoku
 {
    public :
-        int comp[9][9];
+        //int comp[9][9];
         int data[9][9];
         int arr[9][9];
 	
