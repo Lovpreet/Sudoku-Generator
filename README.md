@@ -10,7 +10,7 @@ In Sudoku we have 9x9 array that we have to fill with numbers ranging from 1 to 
 -->First we create a class sudoku which would contain data members=> two 9x9 arrays->one->without zeros(data[i][j]) and the other with zero's(arr[i][j]) and methods/member functions to check
    if number is repeated in row column or 3x3 block also one for checking if the number/element is zero or not.
 -->Fill the data[i][j] wiht zeros.    
--->Now first to generate Numbers randomly I have used c++11 features such as the defalt_random_engine(generates psuedo random numbers), uniform_int_distribution
+-->Now first to generate Numbers randomly I have used the "defalt_random_engine"(generates psuedo random numbers)/(or you can yous rand() and srand()), uniform_int_distribution
    for more info on these->http://www.cplusplus.com/reference/random/default_random_engine
    (note :- rand() and srand() can also be used here instead of the above two)
 -->In psuedogen() method the 9x9 array block is been filled with random numbers only in few spaces(which are also randomly generated i.e. 'i' and 'j' are randomly generated too).
